@@ -1,11 +1,11 @@
 import React from 'react'
-import Home from './Home';
+import MovieScreen from './screens/MovieScreen';
 
 const App = () => {
   return (
     <div style={{background:"#1F2937"}} className='flex justify-center items-center h-screen '>
 
-          <Home/>
+          <MovieScreen/>
     
     </div>
   )
