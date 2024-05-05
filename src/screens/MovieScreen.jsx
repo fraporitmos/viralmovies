@@ -103,8 +103,10 @@ const MovieScreen = () => {
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
                 style={customStyles}
+                className=''
                 contentLabel="Example Modal" >
-                <div className="flex flex-col overflow-y-auto   bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10 max-h-[90vh] py-4">
+               <div className='max-h-[95vh] overflow-y-auto '>
+               <div className="flex flex-col    bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10  py-4">
                     <div className='flex  gap-8 justify-center items-center'>
                         <img
                             alt="profil"
@@ -159,7 +161,7 @@ const MovieScreen = () => {
                         type="text"
 
                         rows="5"
-                        class=" rounded-lg border-transparent appearance-none border border-gray-300 py-2 h-36 line-clamp-4	 px-4 mt-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                        class="min-h-[80px] rounded-lg border-transparent appearance-none border border-gray-300 py-2 h-36 line-clamp-4	 px-4 mt-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                         placeholder="Description of movie"
                     />
                     <div className='flex justify-center gap-4 mt-4'>
@@ -258,6 +260,7 @@ const MovieScreen = () => {
                     </button>
                     </div>
                 </div>
+               </div>
             </Modal>
 
 
