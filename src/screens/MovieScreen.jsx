@@ -38,7 +38,7 @@ const MovieScreen = () => {
 
     const getAllMovies = async () => {
     
-        const req = axios.get(`https://viralmovie.fraporitmos.com/api/collections/movie/records?perPage=10`, 
+        const req = axios.get(`https://viralmovie.fraporitmos.com/api/collections/movie/records?perPage=20&sort=-created`, 
 )
         const res = await req;
         setMovies(res.data.items)
@@ -86,7 +86,8 @@ const MovieScreen = () => {
         if (record) {
             alert('Pelicula creada correctamente ✅')
             setIsOpen(false)
-            window.location.reload()
+            // window.location.reload()
+            getAllMovies()
         }
     }
 
