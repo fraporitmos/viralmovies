@@ -104,7 +104,7 @@ const MovieScreen = () => {
                 onRequestClose={closeModal}
                 style={customStyles}
                 contentLabel="Example Modal" >
-                <div style={{ height: '650px' }} class="flex flex-col overflow-y-auto    bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
+                <div className="flex flex-col overflow-y-auto   bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10 max-h-[90vh] py-4">
                     <div className='flex  gap-8 justify-center items-center'>
                         <img
                             alt="profil"
